@@ -1,0 +1,47 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #667eea, #764ba2);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 80px; /* space for header */
+  transition: all 0.3s ease;
+}
+
+.sidebar-link {
+  display: block;
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin: 4px 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar-link {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
